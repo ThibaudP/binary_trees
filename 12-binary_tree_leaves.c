@@ -7,6 +7,7 @@
  * Return: if tree is NULL, your function must return 0 or depth
  * A NULL pointer is not a leaf
  */
+
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
 	if (tree == NULL)
