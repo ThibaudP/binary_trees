@@ -11,6 +11,9 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)
 {
 	binary_tree_t *piv1, *piv2;
 
+	if (tree == NULL)
+		return (NULL);
+
 	piv1 = tree->parent;
 	piv2 = tree->right;
 	tree->right = piv2->left;
